@@ -19,13 +19,13 @@ class Hotel
 
   def update(floor_no, sub_corridor_no, movement)
     if(floor_no < 1 || floor_no > self.floors.length)
-      puts "Invalid Input: Floor #{floor_no} doesn't exist".red
+      puts "Invalid Input: Floor #{floor_no} doesn't exist."
       return
     end
     selected_floor = self.floors[floor_no-1]
     sub_corridors = selected_floor.sub_corridors
     if(sub_corridor_no < 1 || sub_corridor_no > sub_corridors.length)
-      puts "Invalid Input: Floor #{floor_no} does not have sub corridor #{sub_corridor_no}".red
+      puts "Invalid Input: Floor #{floor_no} does not have sub corridor #{sub_corridor_no}."
       return
     end
     sub_corridor = sub_corridors[sub_corridor_no-1]
