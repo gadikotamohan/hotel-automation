@@ -1,0 +1,2 @@
+describe Corridor do
+end

@@ -1,0 +1,2 @@
+describe Hotel do
+end

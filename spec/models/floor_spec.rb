@@ -1,0 +1,2 @@
+describe Floor do
+end

@@ -1,0 +1,2 @@
+describe Appliance do
+end
