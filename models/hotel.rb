@@ -39,6 +39,6 @@ class Hotel
       end
     end
     # check if ac's need to be powered on
-    sub_corridor.check_and_reset_power
+    selected_floor.check_and_reset_power
   end
 end

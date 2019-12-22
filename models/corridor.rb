@@ -1,18 +1,18 @@
 class Corridor
   attr_accessor :lights, :air_conditioners
-  def intialize
-    self.lights = [Appliance.new(STATUS[:off], DEFAULT_UNITS[:lights])]
-    self.air_conditioners = [Appliance.new(STATUS[:off], DEFAULT_UNITS[:ac])]
+  def initialize
+    self.lights = [Appliance.new(STATE[:off], DEFAULT_UNITS[:lights])]
+    self.air_conditioners = [Appliance.new(STATE[:off], DEFAULT_UNITS[:ac])]
     @movement = false
   end
 
   def status
     status_str = ''
     self.lights.each_with_index do |light, i|
-      status_str << "    Light #{i+1}: #{light.status}" + "\n"
+      status_str << "    Light #{i+1}: #{light.state}" + "\n"
     end
     self.air_conditioners.each_with_index do |ac, i|
-      status_str << "    AC #{i+1}: #{ac.status}" + "\n"
+      status_str << "    AC #{i+1}: #{ac.state}" + "\n"
     end
     status_str
   end

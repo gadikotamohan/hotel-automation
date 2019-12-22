@@ -1,3 +1,4 @@
+require 'observer'
 class Controller
   include Observable
   attr_accessor :hotel

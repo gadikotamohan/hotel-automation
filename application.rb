@@ -1,5 +1,5 @@
 require 'pry'
-Dir["./init/*.rb"].each {|file| require file }
+Dir["./initializers/*.rb"].each {|file| require file }
 Dir["./models/*.rb"].each {|file| require file }
 
 print "Enter the number of Floors: "
