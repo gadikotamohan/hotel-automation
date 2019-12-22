@@ -13,8 +13,9 @@
 # it.
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
-Dir["../initializers/*.rb"].each {|file| require file }
-Dir["../models/*.rb"].each {|file| require file }
+Dir["./initializers/*.rb"].each {|file| require file }
+Dir["./models/*.rb"].each {|file| require file }
+require 'pry'
 
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate

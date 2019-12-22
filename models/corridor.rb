@@ -29,14 +29,6 @@ class Corridor
     @movement
   end
 
-  def power_on_lights
-    self.lights.map{ |light| light.power_on }
-  end
-
-  def power_off_lights
-    self.lights.map{ |light| light.power_off }
-  end
-
   def power_usage
     self.lights.inject(0){ |r,light| r += light.power_usage } + self.air_conditioners.inject(0) { |r,ac| r += ac.power_usage }
   end

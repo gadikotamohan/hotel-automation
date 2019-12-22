@@ -2,7 +2,7 @@
 class Appliance
   attr_accessor :power, :state
   def initialize(state, power)
-    self.state = STATE.values.include?(state) ? state : (throw Exception.new("Invalid Appliance state"))
+    self.state = STATE.values.include?(state) ? state : (raise "Invalid Appliance state")
     self.power = power
   end
 
